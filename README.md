@@ -13,12 +13,12 @@ effiziente Eingabemöglichkeit für einen/mehrere der Werte.
  verwenden Sie bei der Implementierung die Struktur wie im package `ch.fhnw.cuie.project.template_businesscontrol`.
 
 ## Bearbeitet von
- - Vorname, Nachname
- 
+ - Simon, Wächter
+
 ## Integriert in die OOP2-Projekte von
 - _**Ergänzen Sie hier welche OOP2-Teams Ihr Custom Control erfolgreich integriert haben.**_
 
- 
+
 ## Präsentation
 - **Montag, 4.6.2018**, 19:00 bis 19:45 Uhr, Raum 1.047
 
@@ -43,25 +43,25 @@ in die jeweiligen OOP2-Projekte zu integrieren. Dies ist eine Gemeinschafts-Aufg
 ## Bewertung
 - Mit einer gut wahrnehmbaren Präsentation Ihres Custom Control an der Postersession haben Sie mindestens 
   eine 4.0 erreicht.
-  
+
 - **Nicht genügend** ist es wenn Sie an der Postersession nicht oder überwiegend passiv teilnehmen. 
 **Das Spielen von Videospielen** wird zum Beispiel als passive Teilnahme angesehen.
 
 - Durch eine gute Code-Qualität des Custom Control, d.h. insbesondere eine klare Struktur des Codes entsprechend der
  im Unterricht erarbeiteten Konzepte, können Sie eine 5.0 erreichen. Mit nicht compilierbarem Code kann keine bessere Note erreicht werden.
- 
+
 - Die Qualität des Controls aus Benutzersicht wird daran gemessen wie oft das Control in ein OOP2-Projekt integriert 
  wird. Jede Integration wird mit +0.5 bewertet.
- 
+
 
 ## Bitte beachten Sie
  - Tragen Sie ihren Namen unter "Bearbeitet von" ein.
- 
+
  - Tragen Sie die Namen der OOP2-Teilnehmer ein in dessen OOP2-Projekte ihr Custom-Control erfolgreich integriert wurde.
- 
+
  - Es wird empfohlen das Projekt in 2-er Teams zu bearbeiten. 
    - Es wird erwartet, dass die Lösung gemeinsam erarbeitet und implementiert wird (Stichwort 'Pair-Programming').
- 
+
  - Falls Sie das Assignment zu zweit bearbeiten:
    - tragen Sie beide Namen unter "Bearbeitet von" ein
    - arbeiten Sie ausschliesslich in einem Repository
@@ -69,7 +69,7 @@ in die jeweiligen OOP2-Projekte zu integrieren. Dies ist eine Gemeinschafts-Aufg
    - löschen Sie das nicht benötigte Repository (auf GitHub unter "Settings")
    - arbeiten Sie gemeinsam und gleichzeitig an den Aufgaben (Stichwort: Pair-Programming)
    - das Aufteilen und separate Bearbeiten von Aufgaben ist nicht erwünscht
- 
+
  - Ausdrücklich erlaubt und erwünscht ist, dass Sie sich gegebenenfalls Hilfe holen.
  Das Programmierzentrum ist geöffnet und Nachfragen werden zum Beispiel über den im Repository integrierten 
  Issue Tracker oder per Mail gerne beantwortet. 
