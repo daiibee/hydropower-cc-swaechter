@@ -15,8 +15,7 @@ public class ToolBarApplication extends Application {
     @Override
     public void start(Stage primaryStage) {
         HydroToolBar toolBar = new HydroToolBar();
-        toolBar.setStyle("-fx-background-color: blue;");
-        toolBar.setCreateButtonOnAction(actionEvent -> System.out.println("Create button clicked!"));
+        toolBar.setCreateButtonOnAction(mouseEvent -> System.out.println("Create button clicked!"));
         toolBar.setEditButtonOnAction(actionEvent -> System.out.println("Edit button clicked!"));
         toolBar.setDeleteButtonOnAction(actionEvent -> System.out.println("Delete button clicked!"));
         toolBar.setGermanLanguageButtonOnAction(actionEvent -> System.out.println("German button clicked!"));
