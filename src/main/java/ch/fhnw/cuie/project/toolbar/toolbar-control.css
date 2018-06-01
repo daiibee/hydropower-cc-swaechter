@@ -2,8 +2,15 @@
     -fx-background-color: #1CA3EC;
 }
 
-.toolbar-control .button {
+.toolbar-control .button-icon {
+    -fx-font-family: FontAwesome;
     -fx-font-size: 18;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+
+.toolbar-control .button-text {
+    -fx-font-size: 16;
     -fx-text-fill: white;
     -fx-background-color: transparent;
 }

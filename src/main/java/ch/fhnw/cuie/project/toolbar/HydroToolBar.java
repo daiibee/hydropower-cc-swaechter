@@ -67,13 +67,13 @@ public class HydroToolBar extends ToolBar {
 
     private void initializeParts() {
         horizontalRegionSpacer = new Region();
-        saveButton = createButton('\uf0c7');
-        createButton = createButton('\uf067');
-        deleteButton = createButton('\uf00d');
-        undoButton = createButton('\uf0e2');
-        redoButton = createButton('\uf01e');
-        germanLanguageButton = createLanguageButton("DE");
-        englishLanguageButton = createLanguageButton("EN");
+        saveButton = createIconButton('\uf0c7');
+        createButton = createIconButton('\uf067');
+        deleteButton = createIconButton('\uf00d');
+        undoButton = createIconButton('\uf0e2');
+        redoButton = createIconButton('\uf01e');
+        germanLanguageButton = createTextButton("DE");
+        englishLanguageButton = createTextButton("EN");
         searchTextField = createTextField();
     }
 
@@ -82,19 +82,19 @@ public class HydroToolBar extends ToolBar {
         getItems().addAll(saveButton, createButton, deleteButton, undoButton, redoButton, horizontalRegionSpacer, germanLanguageButton, englishLanguageButton, searchTextField);
     }
 
-    private Button createButton(char iconName) {
+    private Button createIconButton(char iconName) {
         Button button = new Button();
         button.setText(String.valueOf(iconName));
         button.setFont(customFont);
-        button.getStyleClass().add("button");
+        button.getStyleClass().add("button-icon");
         return button;
     }
 
-    private Button createLanguageButton(String languageName) {
+    private Button createTextButton(String languageName) {
         Button button = new Button();
         button.setText(languageName);
         button.setFont(customFont);
-        button.getStyleClass().add("button");
+        button.getStyleClass().add("button-text");
         return button;
     }
 
