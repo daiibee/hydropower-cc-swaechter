@@ -2,32 +2,13 @@
     -fx-background-color: #1CA3EC;
 }
 
-.toolbar-control .create-button {
-    -fx-background-color: #0F5E9C;
-    -fx-text-fill: #FFFFFF;
+.toolbar-control .button {
+    -fx-font-size: 18;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
 }
 
-.toolbar-control .edit-button {
-    -fx-background-color: #0F5E9C;
-    -fx-text-fill: #FFFFFF;
-}
-
-.toolbar-control .delete-button {
-    -fx-background-color: #0F5E9C;
-    -fx-text-fill: #FFFFFF;
-}
-
-.toolbar-control .german-language-button {
-    -fx-background-color: #0F5E9C;
-    -fx-text-fill: #FFFFFF;
-}
-
-.toolbar-control .english-language-button {
-    -fx-background-color: #0F5E9C;
-    -fx-text-fill: #FFFFFF;
-}
-
-.toolbar-control .search-textfield {
+.toolbar-control .textfield {
     -fx-border-radius: 10 10 10 10;
     -fx-background-radius: 10 10 10 10;
 }
