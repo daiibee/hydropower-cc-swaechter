@@ -16,8 +16,6 @@ public class HydroToolBar extends ToolBar {
 
     private static final String STYLE_PATH = "toolbar-control.css";
 
-    private int fontSize;
-
     private Font customFont;
 
     private Button saveButton;
@@ -47,7 +45,6 @@ public class HydroToolBar extends ToolBar {
 
     private void initializeFont(int fontSize) {
         try {
-            this.fontSize = fontSize;
             InputStream fontInputStream = HydroToolBar.class.getResourceAsStream(FONT_PATH);
             customFont = Font.loadFont(fontInputStream, fontSize);
         } catch (Exception exception) {
