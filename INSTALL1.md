@@ -2,16 +2,21 @@
 
 ## Einleitung
 
+Link: https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/INSTALL1.md
+
 Die ToolBar stellt eine kompakte ToolBar inklusive deaktivierbaren Buttons zur Verfügung. Das Styling erfollgt dabei über eine CSS Datei. In einer Applikation sieht die ToolBar per default wie folgt aus:
 
-![Missing toolbar image](img/HydroToolBar.png?raw=true "HydroToolBar")
+![Missing toolbar image](img/HydroToolBar1.png?raw=true "HydroToolBar")
 
+Oder in der Nahansicht:
+
+![Missing toolbar image](img/HydroToolBar2.png?raw=true "HydroToolBar")
 
 ## Installation
 
 Für die Installation müssen folgende Schritte getätigt werden:
 
-1. Navigiere ins [Repository](https://github.com/FHNW-CUIE/hydropower-cc-swaechter/tree/master/src/main/java/ch/fhnw/cuie/project/toolbar)
+1. Navigiere ins Repository unter https://github.com/FHNW-CUIE/hydropower-cc-swaechter/tree/master/src/main/java/ch/fhnw/cuie/project/toolbar
 2. Lade die Dateien `HydroToolBar.java` und `toolbar-control.css` herunter und platziere beide Dateien in deinem Projekt (**Achtung**: Beide Dateien müssen sich im gleichen Verzeichnis befinden!)
 3. Öffne nun die Datei `HydroToolBar.java` und passe den Namespace des Packages `package` in der ersten Zeile an
 
@@ -94,3 +99,6 @@ Um die Farben und Grössen der Toolbar und deren Elemente zu ändern, wird auf d
 ## Kontakt
 
 Bei Fragen oder Unklarheiten könnt ihr mich (Simon Wächter) gerne kontaktieren: simon.waechter@students.fhnw.ch
+
+Quelle: https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/INSTALL1.md
+ 
