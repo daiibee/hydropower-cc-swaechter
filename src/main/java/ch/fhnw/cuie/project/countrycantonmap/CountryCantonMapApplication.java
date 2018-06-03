@@ -1,8 +1,8 @@
-package ch.fhnw.cuie.project.countrymap;
+package ch.fhnw.cuie.project.countrycantonmap;
 
-import ch.fhnw.cuie.project.countrymap.model.Canton;
-import ch.fhnw.cuie.project.countrymap.model.CantonUtils;
-import ch.fhnw.cuie.project.countrymap.view.CountryCantonView;
+import ch.fhnw.cuie.project.countrycantonmap.model.Canton;
+import ch.fhnw.cuie.project.countrycantonmap.model.CantonUtils;
+import ch.fhnw.cuie.project.countrycantonmap.view.CountryCantonMap;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
@@ -15,9 +15,9 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class CountryMapApplication extends Application {
+public class CountryCantonMapApplication extends Application {
 
-    private CountryCantonView countryCantonView;
+    private CountryCantonMap countryCantonMap;
 
     private Label activeCantonColorLabel;
 
@@ -57,23 +57,23 @@ public class CountryMapApplication extends Application {
 
     private void initializeParts() {
         ObservableList<Canton> observableCantonList = CantonUtils.getAllCantons();
-        countryCantonView = new CountryCantonView(observableCantonList);
+        countryCantonMap = new CountryCantonMap(observableCantonList);
 
         activeCantonColorLabel = new Label("Canton Active");
         activeCantonColorPicker = new ColorPicker();
-        activeCantonColorPicker.setValue(countryCantonView.getActiveCantonColor());
+        activeCantonColorPicker.setValue(countryCantonMap.getActiveCantonColor());
 
         inactiveCantonColorLabel = new Label("Canton Inactive");
         inactiveCantonColorPicker = new ColorPicker();
-        inactiveCantonColorPicker.setValue(countryCantonView.getInactiveCantonColor());
+        inactiveCantonColorPicker.setValue(countryCantonMap.getInactiveCantonColor());
 
         borderColorLabel = new Label("Border");
         borderColorPicker = new ColorPicker();
-        borderColorPicker.setValue(countryCantonView.getBorderColor());
+        borderColorPicker.setValue(countryCantonMap.getBorderColor());
 
         backgroundColorLabel = new Label("Background");
         backgroundColorPicker = new ColorPicker();
-        backgroundColorPicker.setValue(countryCantonView.getBackgroundColor());
+        backgroundColorPicker.setValue(countryCantonMap.getBackgroundColor());
 
         cantonListViewLabel = new Label("Current Canton");
         cantonListView = new ListView<>(observableCantonList);
@@ -85,7 +85,7 @@ public class CountryMapApplication extends Application {
         vBox.getChildren().addAll(activeCantonColorLabel, activeCantonColorPicker, inactiveCantonColorLabel, inactiveCantonColorPicker, borderColorLabel, borderColorPicker, backgroundColorLabel, backgroundColorPicker, cantonListViewLabel, cantonListView);
 
         borderPane = new BorderPane();
-        borderPane.setCenter(countryCantonView);
+        borderPane.setCenter(countryCantonMap);
         borderPane.setRight(vBox);
 
         Scene scene = new Scene(borderPane, 1000, 600);
@@ -97,19 +97,19 @@ public class CountryMapApplication extends Application {
     private void setupValueChangeListeners() {
         cantonListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             ObservableList<Canton> selectedCantons = cantonListView.getSelectionModel().getSelectedItems();
-            for (Canton canton : countryCantonView.getCantonList()) {
+            for (Canton canton : countryCantonMap.getCantonList()) {
                 canton.setIsActive(selectedCantons.contains(canton));
             }
         });
 
-        countryCantonView.setCantonClickCallback(canton -> {
+        countryCantonMap.setCantonClickCallback(canton -> {
             System.out.println("Country clicked: " + canton);
             //canton.setIsActive(!canton.isIsActive());
         });
 
-        activeCantonColorPicker.setOnAction(actionEvent -> countryCantonView.setActiveCantonColor(activeCantonColorPicker.getValue()));
-        inactiveCantonColorPicker.setOnAction(actionEvent -> countryCantonView.setInactiveCantonColor(inactiveCantonColorPicker.getValue()));
-        borderColorPicker.setOnAction(actionEvent -> countryCantonView.setBorderColor(borderColorPicker.getValue()));
+        activeCantonColorPicker.setOnAction(actionEvent -> countryCantonMap.setActiveCantonColor(activeCantonColorPicker.getValue()));
+        inactiveCantonColorPicker.setOnAction(actionEvent -> countryCantonMap.setInactiveCantonColor(inactiveCantonColorPicker.getValue()));
+        borderColorPicker.setOnAction(actionEvent -> countryCantonMap.setBorderColor(borderColorPicker.getValue()));
         backgroundColorPicker.setOnAction(actionEvent -> updateBackground());
     }
 
@@ -121,7 +121,7 @@ public class CountryMapApplication extends Application {
         Color color = backgroundColorPicker.getValue();
         color = new Color(color.getRed(), color.getGreen(), color.getBlue(), 1);
 
-        countryCantonView.setBackgroundColor(color);
+        countryCantonMap.setBackgroundColor(color);
         borderPane.setBackground(new Background(new BackgroundFill(color, CornerRadii.EMPTY, Insets.EMPTY)));
         vBox.setBackground(Background.EMPTY);
     }

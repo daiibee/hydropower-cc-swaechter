@@ -1,4 +1,4 @@
-package ch.fhnw.cuie.project.countrymap.view;
+package ch.fhnw.cuie.project.countrycantonmap.view;
 
 import javafx.geometry.Insets;
 import javafx.scene.layout.Pane;
@@ -12,7 +12,7 @@ public class AbstractView extends Region {
 
     private static final double ASPECT_RATIO = ARTBOARD_WIDTH / ARTBOARD_HEIGHT;
 
-    private static final double MINIMUM_WIDTH = 200;
+    private static final double MINIMUM_WIDTH = 100;
 
     private static final double MINIMUM_HEIGHT = MINIMUM_WIDTH / ASPECT_RATIO;
 

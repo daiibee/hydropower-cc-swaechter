@@ -16,13 +16,15 @@ Oder in der Nahansicht:
 
 Für die Installation müssen folgende Schritte getätigt werden:
 
-1. Navigiere ins Repository unter https://github.com/FHNW-CUIE/hydropower-cc-swaechter/tree/master/src/main/java/ch/fhnw/cuie/project/toolbar
+1. Navigiere ins Repository unter [https://github.com/FHNW-CUIE/hydropower-cc-swaechter/tree/master/src/main/java/ch/fhnw/cuie/project/toolbar](https://github.com/FHNW-CUIE/hydropower-cc-swaechter/tree/master/src/main/java/ch/fhnw/cuie/project/toolbar)
 2. Lade die Dateien `HydroToolBar.java` und `toolbar-control.css` herunter und platziere beide Dateien in deinem Projekt (**Achtung**: Beide Dateien müssen sich im gleichen Verzeichnis befinden!)
 3. Öffne nun die Datei `HydroToolBar.java` und passe den Namespace des Packages `package` in der ersten Zeile an
 
 **Hinweis**: Unsere cuie Templates verfügen über die Font `FontAwesome`, welche Du unter `src/main/resources/fonts/fontawesome-webfont.ttf` finden kannst. Solltest Du diese Datei nicht haben, kontaktiere bitte Herrn Holz.
 
 ## Verwendung
+
+Beispielapplikation: https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/src/main/java/ch/fhnw/cuie/project/toolbar/ToolBarApplication.java
 
 Nach der Installation befindet sich die ToolBar in deinem Projekt und kann in deine Applikation eingebunden werden. Am einfachsten ist es, die Toolbar als `Top` Element in ein `BorderPane` einzubinden:
 

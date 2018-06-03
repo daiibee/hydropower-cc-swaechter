@@ -1,4 +1,4 @@
-package ch.fhnw.cuie.project.countrymap.model;
+package ch.fhnw.cuie.project.countrycantonmap.model;
 
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;

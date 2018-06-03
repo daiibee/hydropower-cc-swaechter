@@ -1,6 +1,6 @@
-package ch.fhnw.cuie.project.countrymap.view;
+package ch.fhnw.cuie.project.countrycantonmap.view;
 
-import ch.fhnw.cuie.project.countrymap.model.Canton;
+import ch.fhnw.cuie.project.countrycantonmap.model.Canton;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.layout.Background;
@@ -9,7 +9,7 @@ import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.SVGPath;
 
-public class CountryCantonView extends AbstractView {
+public class CountryCantonMap extends AbstractView {
 
     public interface CantonClickCallback {
 
@@ -28,7 +28,7 @@ public class CountryCantonView extends AbstractView {
 
     private Color backgroundColor;
 
-    public CountryCantonView(ObservableList<Canton> cantonList) {
+    public CountryCantonMap(ObservableList<Canton> cantonList) {
         initializeData(cantonList);
         initializeSelf();
         layoutParts();
