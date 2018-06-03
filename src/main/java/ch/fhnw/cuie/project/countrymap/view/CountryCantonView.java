@@ -9,16 +9,16 @@ import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.SVGPath;
 
-public class CountryView extends AbstractView {
+public class CountryCantonView extends AbstractView {
 
-    public interface CountryClickCallback {
+    public interface CantonClickCallback {
 
         void onCantonClick(Canton canton);
     }
 
     private ObservableList<Canton> cantonList;
 
-    private CountryClickCallback countryClickCallback;
+    private CantonClickCallback cantonClickCallback;
 
     private Color activeCantonColor;
 
@@ -28,7 +28,7 @@ public class CountryView extends AbstractView {
 
     private Color backgroundColor;
 
-    public CountryView(ObservableList<Canton> cantonList) {
+    public CountryCantonView(ObservableList<Canton> cantonList) {
         initializeData(cantonList);
         initializeSelf();
         layoutParts();
@@ -58,8 +58,8 @@ public class CountryView extends AbstractView {
     private void setupValueChangeListeners() {
         for (Canton canton : cantonList) {
             canton.getSvgPath().setOnMouseClicked(event -> {
-                if (countryClickCallback != null) {
-                    countryClickCallback.onCantonClick(canton);
+                if (cantonClickCallback != null) {
+                    cantonClickCallback.onCantonClick(canton);
                     drawCantonsAndBorders();
                 }
             });
@@ -82,12 +82,16 @@ public class CountryView extends AbstractView {
         setBackground(new Background(new BackgroundFill(backgroundColor, CornerRadii.EMPTY, Insets.EMPTY)));
     }
 
-    public CountryClickCallback getCountryClickCallback() {
-        return countryClickCallback;
+    public ObservableList<Canton> getCantonList() {
+        return cantonList;
     }
 
-    public void setCountryClickCallback(CountryClickCallback countryClickCallback) {
-        this.countryClickCallback = countryClickCallback;
+    public CantonClickCallback getCantonClickCallback() {
+        return cantonClickCallback;
+    }
+
+    public void setCantonClickCallback(CantonClickCallback cantonClickCallback) {
+        this.cantonClickCallback = cantonClickCallback;
     }
 
     public Color getActiveCantonColor() {
