@@ -103,7 +103,7 @@ public class CountryCantonMapApplication extends Application {
         });
 
         countryCantonMap.setCantonClickCallback(canton -> {
-            System.out.println("Country clicked: " + canton);
+            System.out.println("Canton clicked: " + canton);
             //canton.setIsActive(!canton.isIsActive());
         });
 

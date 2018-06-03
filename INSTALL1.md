@@ -24,7 +24,7 @@ Für die Installation müssen folgende Schritte getätigt werden:
 
 ## Verwendung
 
-Beispielapplikation: https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/src/main/java/ch/fhnw/cuie/project/toolbar/ToolBarApplication.java
+Beispielapplikation: [https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/src/main/java/ch/fhnw/cuie/project/toolbar/ToolBarApplication.java](https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/src/main/java/ch/fhnw/cuie/project/toolbar/ToolBarApplication.java)
 
 Nach der Installation befindet sich die ToolBar in deinem Projekt und kann in deine Applikation eingebunden werden. Am einfachsten ist es, die Toolbar als `Top` Element in ein `BorderPane` einzubinden:
 
@@ -102,5 +102,5 @@ Um die Farben und Grössen der Toolbar und deren Elemente zu ändern, wird auf d
 
 Bei Fragen oder Unklarheiten könnt ihr mich (Simon Wächter) gerne kontaktieren: simon.waechter@students.fhnw.ch
 
-Quelle: https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/INSTALL1.md
+Quelle: [https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/INSTALL1.md](https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/INSTALL1.md)
  

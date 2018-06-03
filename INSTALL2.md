@@ -1,4 +1,4 @@
-# Integrationsanleitung ToolBar
+# Integrationsanleitung CountryCantonMap
 
 ## Einleitung
 
@@ -23,13 +23,47 @@ Für die Installation müssen folgende Schritte getätigt werden:
 
 ## Verwendung
 
-Beispielapplikation: https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/src/main/java/ch/fhnw/cuie/project/countrcantonymap/CountryCantonMapApplication.java
- 
-TODO
+Beispielapplikation: [https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/src/main/java/ch/fhnw/cuie/project/countrycantonmap/CountryCantonMapApplication.java](https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/src/main/java/ch/fhnw/cuie/project/countrycantonmap/CountryCantonMapApplication.java)
+
+Nach der Installation befindet sich die CountryCantonMap in deinem Projekt und kann in deine Applikation eingebunden werden. Zuerst müssen aber alle Kantone erstellt werden:
+
+```java
+ObservableList<Canton> observableCantonList = CantonUtils.getAllCantons();
+```
+
+Danach kann die CountryCantonMap erstellt werden:
+
+```java
+CountryCantonMap countryCantonMap = new CountryCantonMap(observableCantonList);
+```
+
+Die CountryCantonMap arbeitet vollständig auf der übergebenen Collection, sprich sie beobachtet die Werte der sich darin befindlichen Kantone. Um Beispiel den Kanton `Aargau` zu selektieren, holen wir uns das erste Element aus der Liste und setzen es aktiv (Der Kanton sollte nun aufleuchten):
+
+```java
+Canton canton = observableCantonList.get(0);
+canton.setIsActive(true);
+```
+
+Analog dazu kann auch ein Klickhandler installiert werden. Dort kann man beispielsweise auf den Klick reagieren und den Zustand des geklickten Kantons ändern, was noch auskommentiert ist:
+
+```java
+countryCantonMap.setCantonClickCallback(canton -> {
+    System.out.println("Canton clicked: " + canton);
+    //canton.setIsActive(!canton.isIsActive()); // Einkommentieren, falls Status des Kantons geändert werden soll
+});
+```
+
+Die einzelnen Farben lassen sich wie folgt verändern:
+
+```java
+Color color = ... 
+countryCantonMap.setActiveCantonColor(color); // Farbe der angewählten/aktiven Kantone
+countryCantonMap.setInactiveCantonColor(color); // Farbe der nicht angewählten/inaktiven Kantone
+countryCantonMap.setBorderColor(color); // Ränderfarbe zwischen den Kantonen
+```
 
 ## Kontakt
 
 Bei Fragen oder Unklarheiten könnt ihr mich (Simon Wächter) gerne kontaktieren: simon.waechter@students.fhnw.ch
 
-Quelle: https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/INSTALL2.md
- 
+Quelle: [https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/INSTALL2.md](https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/INSTALL2.md)

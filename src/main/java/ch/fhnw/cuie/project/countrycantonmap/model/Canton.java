@@ -19,7 +19,6 @@ public class Canton {
         this.svgPath.setContent(pathValue);
         this.displayName = displayName;
         this.isActive = new SimpleBooleanProperty(false);
-
     }
 
     public SVGPath getSvgPath() {
