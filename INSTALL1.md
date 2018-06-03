@@ -4,13 +4,13 @@
 
 Link: https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/INSTALL1.md
 
-Die ToolBar stellt eine kompakte ToolBar inklusive deaktivierbaren Buttons zur Verfügung. Das Styling erfollgt dabei über eine CSS Datei. In einer Applikation sieht die ToolBar per default wie folgt aus:
+Die ToolBar stellt eine kompakte ToolBar inklusive deaktivierbaren Buttons zur Verfügung. Das Styling erfolgt dabei über eine CSS Datei. In einer Applikation sieht die ToolBar per default wie folgt aus:
 
-![Missing toolbar image](img/HydroToolBar1.png?raw=true "HydroToolBar")
+![Missing toolbar image](https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/img/HydroToolBar1.png?raw=true "HydroToolBar")
 
 Oder in der Nahansicht:
 
-![Missing toolbar image](img/HydroToolBar2.png?raw=true "HydroToolBar")
+![Missing toolbar image](https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/img/HydroToolBar2.png?raw=true "HydroToolBar")
 
 ## Installation
 
