@@ -4,11 +4,11 @@
 
 Link: https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/INSTALL2.md
 
-Die CountryCantonMap stellt eine grosse, aber auch stark komprimierbare, Übersicht aller Schweizer Kantone dar. Dabei können Kantone an- und abgewählt werden und dynamisch Farben gesetzt werden. Das Styling erfolgt über Methoden. In einer Applikation sieht die CountryCantonMap per Default wie folgt aus:
+Die CountryCantonMap stellt eine grosse, aber auch stark komprimierbare, Übersicht aller Schweizer Kantone dar. Dabei können Kantone an- und abgewählt, auf Klicks auf Kantone reagiert und dynamisch Farben gesetzt werden. Das Styling erfolgt über Methoden. In einer Applikation sieht die CountryCantonMap per default wie folgt aus:
 
 ![Missing country canton map image](https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/img/CountryCantonMap1.png?raw=true "CountryCantonMap")
 
-Oder in einer stark komprimierten Form (Um Beispielsweise den Kanton eines Kraftwerkes anzuzeigen):
+Oder in einer stark komprimierten Form (Um beispielsweise den Kanton eines Kraftwerkes anzuzeigen):
 
 ![Missing country canton map image](https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/img/CountryCantonMap2.png?raw=true "CountryCantonMap")
 
