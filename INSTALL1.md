@@ -12,6 +12,10 @@ Oder in der Nahansicht:
 
 ![Missing toolbar image](https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/img/HydroToolBar2.png?raw=true "HydroToolBar")
 
+![Missing toolbar image](https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/img/HydroToolBar3.png?raw=true "HydroToolBar")
+
+![Missing toolbar image](https://github.com/FHNW-CUIE/hydropower-cc-swaechter/blob/master/img/HydroToolBar4.png?raw=true "HydroToolBar")
+
 ## Installation
 
 Für die Installation müssen folgende Schritte getätigt werden:
