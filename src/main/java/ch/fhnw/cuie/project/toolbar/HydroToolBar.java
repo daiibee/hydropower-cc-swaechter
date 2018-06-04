@@ -123,10 +123,6 @@ public class HydroToolBar extends ToolBar {
         return redoButton;
     }
 
-    public Region getHorizontalRegionSpacer() {
-        return horizontalRegionSpacer;
-    }
-
     public Button getGermanLanguageButton() {
         return germanLanguageButton;
     }
